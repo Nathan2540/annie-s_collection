@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@600&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: "Ubuntu", sans-serif;
+
+
+}
+ /* From Uiverse.io by gharsh11032000 */ 
+.homebutton {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 24px;
+  font-size: 15px;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  font-weight: 500;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  overflow: hidden;
+  outline: none;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  height: 50px;
+}
+.wclm{
+  font-size: 30px;
+}
+.homebutton::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 100%;
+  height: 50px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color: #C9184A;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.homebutton:hover::before {
+  scale: 3;
+}
+
+.homebutton:hover {
+  color: white;
+  scale: 1.1;
+  box-shadow: 0 0px 20px rgba(255, 255, 255, 0.4);
+}
+
+.homebutton:active {
+  scale: 1;
+}
+ 
+.bg-body-tertiary{
+  position: fixed;
+  top: 1;
+}
+.brand{
+  width: 100px; 
+   
+  align-items: center;
+  display: flex;
+}
+.white{
+  background: #ffffff;
+}
+.navbar-toggler:focus{
+  border: 1px solid #000000;
+  background: #fff4f4;
+  box-shadow: none;
+  color: white;
+}
+ .bx1:hover{
+  scale: 1.1;
+box-shadow: 0 0 1rem #C9184A;
+border: 4px solid #C9184A;
+ }
+ .bx2:hover{
+  scale: 1.1;
+box-shadow: 0 0 1rem #ffffff;
+border: 1px solid #ffffff;
+ }
+ .ul li{
+font-size: 13px;
+font-weight: 100;
+color: #363636;
+line-height: 40px;
+ }
+ .product-card {
+  width: 330px;
+  height: fit-content;
+   position: relative;
+  box-shadow: 0 2px 7px #C9184A;
+ border-radius: 20px;
+  background: #fafafa;
+}
+.icon:hover{
+color: #C9184A;
+scale: 1.2;
+transition: 0.3s ease-in;
+}
+
+.badge {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  background: red;
+  color: #fff;
+  padding: 3px 10px;
+}
+
+.product-tumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  border-radius: 20px 20px 0 0;
+  padding: 0px;
+  background: #f0f0f0;
+}
+
+.product-tumb img {
+  max-width: 140%;
+
+  
+  transform: scale(1.0);
+  max-height: 100%;
+}
+
+.product-details {
+  padding: 30px;
+}
+
+.product-catagory {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #C9184A;
+  margin-bottom: 18px;
+}
+
+.product-details h4 a {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  color: #363636;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.product-details h4 a:hover {
+  color: #C9184A;
+}
+
+.product-details p {
+  font-size: 15px;
+  line-height: 22px;
+  margin-bottom: 18px;
+  color: #000000;
+}
+
+.product-bottom-details {
+  overflow: hidden;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.product-bottom-details div {
+  float: left;
+  width: 50%;
+}
+
+.product-price {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 600;
+}
+
+.product-price small {
+  font-size: 80%;
+  font-weight: 400;
+  text-decoration: line-through;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.product-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.product-links a {
+  display: inline-block;
+  margin-left: 5px;
+  color: #e1e1e1;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.product-links a:hover {
+  color: black;
+}
+ /* From Uiverse.io by e-coders */ 
+.crdbtn {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #C9184A;
+  color: #C9184A;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 10px 10px 10px;
+  text-decoration: none;
+  cursor: pointer;
+  background: #fff;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+ }
+ 
+ .crdbtn span:first-child {
+  position: relative;
+  transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 10;
+ }
+ 
+ .crdbtn span:last-child {
+  color: white;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 100;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translateY(225%) translateX(-50%);
+  height: 14px;
+  line-height: 13px;
+ }
+ 
+ .crdbtn:after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: #C9184A;
+  transform-origin: bottom center;
+  transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  transform: skewY(9.3deg) scaleY(0);
+  z-index: 50;
+ }
+ 
+ .crdbtn:hover:after {
+  transform-origin: bottom center;
+  transform: skewY(9.3deg) scaleY(2);
+ }
+ 
+ .crdbtn:hover span:last-child {
+  transform: translateX(-50%) translateY(-50%);
+  opacity: 1;
+  transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+ }
+ 
+
+ .button1{
+  width: 50px;
+  background: #f0f0f0;
+  height: 70px;
+  padding: 20px 30px;
+ border-radius: 20px 0 0 20px;
+ }
+ .button2{
+  width: 50px;
+  background: #f0f0f0;
+  height: 70px;
+  padding: 20px 45px;
+  border-radius: 0 20px 20px 0;
+ }
+.button2:hover{
+  border: 1px solid #C9184A;
+  box-shadow: 0 0 1rem #C9184A;
+  scale: 1;
+}
+
+.button1:hover{
+  border: 1px solid #C9184A;
+  box-shadow: 0 0 1rem #C9184A;
+  scale: 1;
+}
+.button1:active {
+  filter: brightness(75%);
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+  padding: 0;
+  margin-right: 1em;
+  
+  border: none;
+}
+
+.dropdown summary {
+  list-style: none;
+  list-style-type: none;
+}
+
+.dropdown > summary::-webkit-details-marker {
+  display: none;
+}
+
+.dropdown summary:focus {
+  outline: none;
+}
+
+.dropdown summary:focus a.button {
+  border: 2px solid #C9184A;
+}
+
+.dropdown summary:focus {
+  outline: none;
+}
+
+.dropdown ul {
+  position: absolute;
+  margin: 20px 0 0 0;
+  padding: 20px 0;
+  width: 160px;
+  left: 50%;
+  margin-left: calc((160px / 2)  * -1);
+  box-sizing: border-box;
+  z-index: 2;
+  color: white;
+  background: #000000;
+  border-radius: 6px;
+  list-style: none;
+}
+
+.dropdown ul li {
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown ul li a:link, .dropdown ul li a:visited {
+  display: inline-block;
+  padding: 10px 0.8rem;
+  width: 100%;
+  box-sizing: border-box;
+  
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.dropdown ul li a:hover {
+  background-color: #C9184A;
+  color: #f0f0f0;
+}
+
+/* Dropdown triangle */
+.dropdown ul::before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: -10px;
+  left: 50%;
+  margin-left: -10px;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #000000 transparent;
+}
+
+
+/* Close the dropdown with outside clicks */
+.dropdown > summary::before {
+  display: none;
+}
+
+.dropdown[open] > summary::before {
+    content: ' ';
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+/* From Uiverse.io by david-mohseni */ 
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  height: 120px;
+  width: 100%;
+  padding-top: 40px;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #fff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877f2;
+  color: #fff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #0f0f0f;
+  color: #fff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #e4405f;
+  color: #fff;
+}
+.label{
+  font-size: 20px;
+  color: #e4405f;
+  margin-left: 20px;
+}
+.input1{
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #C9184A;
+  box-shadow: 0 0 1rem #e4405f;
+  margin: 20px;
+  outline: #fff;
+  color: black;
+}
+.input2{
+  width: 70%;
+  outline: #fff;
+
+  height: 150px;
+  padding: 10px;
+  border: 1px solid #C9184A;
+  box-shadow: 0 0 1rem #e4405f;
+  margin: 20px;
+  color: black;
+}
+.btnn{
+  padding: 20px 33px;
+  background: #C9184A;
+  border: 1px solid white;
+  color: white;
+  box-shadow: 0 0 1rem #C9184A;
+  border-radius: 10px;
+}
+.form2{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+   gap: 20px;
+   padding: 20px;
+  justify-content: space-around;
+  border-top: 1px solid rgba(199, 199, 199, 0.418);
+  flex-direction: column;
+}
+.form2 label{
+  color: black;
+  font-family: 20px;
+}
+.form2 input, textarea{
+  background: rgba(255, 255, 255, 0.363);
+  outline: none;
+  padding: 10px;
+}
+.form2 button{
+  padding: 5px 10px;
+  background: white;
+  color: black;
+  float: inline-start;
+  width: 90px;
+  box-shadow: 0 0 1rem #C9184A;
+  border-radius: 10px;
+}
