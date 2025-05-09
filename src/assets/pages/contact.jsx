@@ -3,14 +3,15 @@ import { FaTiktok, FaWhatsapp } from "react-icons/fa";
 
  const Contactus = () => {
     return ( 
-<Box width={"100%"} height={"-webkit-fit-content"} justifyContent={"center"} marginTop={5} marginY={5} marginLeft={0} px={"90px"}>
+<Box width={"100%"} height={"-webkit-fit-content"} justifyContent={"center"} marginTop={5} marginY={5} marginLeft={0} px={"20px"}>
  
 <ul class="wrapper">
-  <a href="wa.link/1fcne6"></a>
+  <a href="wa.link/1fcne6">
   <li class="icon facebook">
     <span class="tooltip">Whatsapp</span>
      <FaWhatsapp fontSize={"25px"}/>
   </li>
+  </a>
   <a href="https://www.tiktok.com/@annieanni20?lang=en&is_from_webapp=1&sender_device=mobile$sender_web_id=7413055984224585222"> 
   <li class="icon twitter">
     <span class="tooltip">Tiktok</span>
